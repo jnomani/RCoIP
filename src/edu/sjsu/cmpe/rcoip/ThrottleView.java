@@ -492,7 +492,7 @@ public class ThrottleView extends View {
                         for (int i = 0; i < numberOfFrames; i++) {
                                 final int j = i;
                                 postDelayed(new Runnable() {
-                                        @Override
+                                        
                                         public void run() {
                                                 touchX += intervalsX;
                                                 //touchY += intervalsY;

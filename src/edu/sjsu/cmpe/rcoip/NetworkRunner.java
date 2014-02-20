@@ -12,7 +12,6 @@ public class NetworkRunner implements Runnable {
 	public static final int SERVERPORT = 2001;
 	
 	String data = "0xDEADBEEF";
-	@Override
 	public void run() 
 	{
 		try {

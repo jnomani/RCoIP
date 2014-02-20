@@ -103,7 +103,7 @@ public class NetworkThread extends Thread
 		data = values;
 		threadHandler.postDelayed(new Runnable()
 		{
-			@Override
+			
 			public void run()
 			{
 				try

@@ -49,7 +49,7 @@ public class JoyServer extends Thread {
 		//DatagramPacket packet;
 		serverHandler.post(new Runnable()
 		{
-			@Override
+			
 			public void run()
 			{
 				try

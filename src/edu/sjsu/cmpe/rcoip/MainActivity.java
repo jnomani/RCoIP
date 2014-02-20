@@ -90,7 +90,7 @@ public class MainActivity extends Activity implements NetComm
         
         private JoystickMovedListener _listener = new JoystickMovedListener() 
         {
-            @Override
+            
             public void OnMoved(int pan, int tilt) 
             {
             		LeftPan = Integer.toHexString(Math.abs(pan+127));
@@ -115,7 +115,7 @@ public class MainActivity extends Activity implements NetComm
                     nt.send("X1" + RightPan + "X2" + RightTilt + "X3" + LeftTilt + "X4" + LeftPan);
             }
 
-            @Override
+            
             public void OnReleased() {  /*txtXL.setText("released"); txtYL.setText("released");*/ nt.send("X1" + RightPan + "X2" + RightTilt + "X3" + LeftTilt + "X4" + LeftPan); }
             
             public void OnReturnedToCenter() { /*txtXL.setText("stopped"); txtYL.setText("stopped");*/  nt.send("X1" + RightPan + "X2" + RightTilt + "X3" + LeftTilt + "X4" + LeftPan); };
@@ -123,7 +123,7 @@ public class MainActivity extends Activity implements NetComm
     
     	private JoystickMovedListener listener_ = new JoystickMovedListener()
     	{
-    		@Override
+    		
             public void OnMoved(int pan, int tilt) 
     		{
     			RightPan = Integer.toHexString(Math.abs(pan+127));
@@ -147,7 +147,7 @@ public class MainActivity extends Activity implements NetComm
                 nt.send("X1" + RightPan + "X2" + RightTilt + "X3" + LeftTilt + "X4" + LeftPan);
             }
 
-            @Override
+            
             public void OnReleased() {  /*txtXR.setText("released"); txtYR.setText("released"); */ nt.send("X1" + RightPan + "X2" + RightTilt + "X3" + LeftTilt + "X4" + LeftPan); }
             
             public void OnReturnedToCenter() { /* txtXR.setText("stopped"); txtYR.setText("stopped"); */ nt.send("X1" + RightPan + "X2" + RightTilt + "X3" + LeftTilt + "X4" + LeftPan); }
@@ -159,12 +159,12 @@ public class MainActivity extends Activity implements NetComm
     		nt.teardown();
     	}
     	
-    	@Override
+    	
     	public void Communicate()
     	{
     		nt.getHandler().post(new Runnable()
     		{
-    			@Override
+    			
     			public void run()
     			{ 
     				try {
